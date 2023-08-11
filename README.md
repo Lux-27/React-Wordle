@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# React Wordle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Wordle Master, a fun and addictive word-guessing game built using ReactJS and powered by custom hooks. Put your word skills to the test as you try to guess the hidden word with a limited number of attempts. Challenge your vocabulary, exercise your brain, and have a blast while playing Wordle Master!
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Sleek and Intuitive Design:** Wordle Master features a clean and user-friendly interface that enhances your gaming experience.
+- **Custom Hooks Power:** Built using the power of custom React hooks, the app offers efficient state management and component logic.
+- **Wordle Gameplay:** Guess the secret five-letter word within six attempts. Each guess provides feedback on the correctness of the letters, making it a thrilling challenge.
+- **Endless Replayability:** With a vast dictionary of words, every game is a unique experience, ensuring you'll never run out of words to guess.
+- **Real-time Feedback:** Receive immediate feedback on your guesses, helping you fine-tune your next attempt.
 
-### `npm start`
+## Screenshots
+![Weather App Screenshot 1](public/Screenshot1.png)
+![Weather App Screenshot 2](public/Screenshot2.png)
+![Weather App Screenshot 3](public/Screenshot3.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps to set up the project locally:
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone https://github.com/Lux-27/React-Wordle.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
+```bash
+cd React-Wordle
+```
+3. Install the dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First, run the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then, run the local JSON server:
 
-### `npm run eject`
+```bash
+json-server ./data/output.json --port 3001
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the web page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open [http://localhost:3001/solutions](http://localhost:3001/solutions) with your browser to see the solutions for the game.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will start the development server and open the app in your default web browser.
 
-## Learn More
+## How to play
+- Launch the app and begin a new game.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Guess a five-letter word and submit your attempt.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Receive feedback on the correctness of each letter in your guess.
 
-### Code Splitting
+- Use the feedback to make educated guesses and solve the word within six attempts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Enjoy the thrill of victory as you successfully guess the hidden word!
 
-### Analyzing the Bundle Size
+## Customization
+Wordle Master is not only a fun game but also a versatile project. You can easily customize and expand upon it:
+- Add difficulty levels with varying word lengths and guess limits.
+- Implement a timer to add an extra layer of challenge.
+- Integrate a multiplayer mode and compete with friends.
+- Enhance the UI with additional animations and visual effects.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributions
+- Contributions are welcome and encouraged! If you find a bug or have an idea for improvement, feel free to open an issue or submit a pull request.
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- ReactJS
+- JavaScript
+- Custom Hooks
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Get ready to test your word skills and have hours of entertainment with Wordle Master! Try it out now and see if you can become the ultimate Wordle Master. Happy guessing!
