@@ -12,6 +12,7 @@ const useWordle = (solution) => {
   //each guess is a string, used to check duplicate guesses submitted by user
   const [history, setHistory] = useState([]);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [usedKeys, setUsedKeys] = useState({}); // looks like {a: "gray", b: "yellow", c: "green"}
 
   //format a guess into an array of letter objects
   //eg. [{key: 'a', color: 'yellow'}]
@@ -62,6 +63,30 @@ const useWordle = (solution) => {
       return prevTurn + 1;
     });
 
+    setUsedKeys((prevUsedKeys) => {
+      let newKeys = { ...prevUsedKeys };
+      formattedGuess.forEach((letter) => {
+        const currentColor = newKeys[letter.key];
+
+        if (letter.color === "green") {
+          newKeys[letter.key] = "green";
+          return;
+        }
+        if (letter.color === "yellow" && currentColor !== "green") {
+          newKeys[letter.key] = "yellow";
+          return;
+        }
+        if (
+          letter.color === "gray" &&
+          currentColor !== "yellow" &&
+          currentColor !== "yellow"
+        ) {
+          newKeys[letter.key] = "gray";
+          return;
+        }
+      });
+      return newKeys;
+    });
     setCurrentGuess("");
   };
 
@@ -107,7 +132,7 @@ const useWordle = (solution) => {
     }
   };
 
-  return { turn, currentGuess, guesses, isCorrect, handleKeyup };
+  return { turn, currentGuess, guesses, isCorrect, usedKeys, handleKeyup };
 };
 
 export default useWordle;
