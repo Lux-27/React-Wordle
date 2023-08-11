@@ -12,6 +12,7 @@ Welcome to Wordle Master, a fun and addictive word-guessing game built using Rea
 
 ## Screenshots
 ![Wordle App Screenshot 1](public/1.png)
+![Wordle App Screenshot 4](public/4.png)
 ![Wordle App Screenshot 2](public/3.png)
 ![Wordle App Screenshot 3](public/2.png)
 
