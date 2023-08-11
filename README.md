@@ -11,9 +11,9 @@ Welcome to Wordle Master, a fun and addictive word-guessing game built using Rea
 - **Real-time Feedback:** Receive immediate feedback on your guesses, helping you fine-tune your next attempt.
 
 ## Screenshots
-![Weather App Screenshot 1](public/Screenshot1.png)
-![Weather App Screenshot 2](public/Screenshot2.png)
-![Weather App Screenshot 3](public/Screenshot3.png)
+![Wordle App Screenshot 1](public/1.png)
+![Wordle App Screenshot 2](public/3.png)
+![Wordle App Screenshot 3](public/2.png)
 
 ## Setup
 
